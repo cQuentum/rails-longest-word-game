@@ -1,0 +1,14 @@
+<table>
+  <td>
+    <% @letters.sample(rand(5..10)).each do |letter| %>
+    <td>  <%=letter.capitalize%> </td>
+    <% end %>
+  </td>
+</table>
+
+
+
+<form action="/score" method="POST" >
+  <input type="text" name="check">
+  <input type="submit" value="Check!">
+</form>
